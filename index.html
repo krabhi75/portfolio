@@ -6,7 +6,7 @@
 <title>Abhishek Kumar — Product Manager</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%2304040a'/%3E%3Ctext x='16' y='18' font-family='%22JetBrains Mono%22, monospace' font-size='18' font-weight='bold' fill='%23c9a84c' text-anchor='middle'%3EAK%3C/text%3E%3C/svg%3E">
-<link href="https://fonts.googleapis.com/css2?family=Clash+Display:wght@400;500;600;700&family=Cabinet+Grotesk:wght@300;400;500;700;800;900&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cabinet+Grotesk:wght@300;400;500;700;800;900&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
 *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
 :root{
@@ -41,7 +41,7 @@ body{
 body::before{
   content:'';
   position:fixed;inset:0;
-  background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' result='noise'/%3E%3CfeColorMatrix in='noise' type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='100%' height='100%' filter='url(%23noise)' opacity='0.5'/%3E%3C/svg%3E");
+  background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' result='noise'/%3E%3CfeColorMatrix in='noise' type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.5'/%3E%3C/svg%3E");
   pointer-events:none;z-index:9999;opacity:0.4;
 }
 
@@ -179,6 +179,7 @@ nav.scrolled{
   background-size:200% auto;
   -webkit-background-clip:text;
   -webkit-text-fill-color:transparent;
+  background-clip:text;
   animation:shimmer 4s linear infinite;
 }
 @keyframes shimmer{to{background-position:200% center}}
@@ -192,6 +193,7 @@ nav.scrolled{
   background:linear-gradient(135deg,#c9a84c,#e8c97a);
   -webkit-background-clip:text;
   -webkit-text-fill-color:transparent;
+  background-clip:text;
 }
 .hero-tagline{
   font-family:var(--ff-serif);
@@ -213,6 +215,7 @@ nav.scrolled{
 }
 .hero-ctas{
   display:flex;gap:16px;align-items:center;
+  flex-wrap:wrap;
   opacity:0;
   animation:fadeUp .8s 1.1s forwards;
 }
@@ -306,7 +309,9 @@ nav.scrolled{
 .stat-num{
   font-size:2rem;font-weight:900;
   background:linear-gradient(135deg,var(--gold),var(--gold2));
-  -webkit-background-clip:text;-webkit-text-fill-color:transparent;
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+  background-clip:text;
   line-height:1;
 }
 .stat-info .label{
@@ -362,7 +367,9 @@ nav.scrolled{
 }
 .s-title .filled{
   background:linear-gradient(135deg,#fff,rgba(255,255,255,.7));
-  -webkit-background-clip:text;-webkit-text-fill-color:transparent;
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+  background-clip:text;
 }
 
 /* ── ABOUT ── */
@@ -380,7 +387,9 @@ nav.scrolled{
 }
 .about-statement .hl{
   background:linear-gradient(135deg,var(--gold),var(--gold2));
-  -webkit-background-clip:text;-webkit-text-fill-color:transparent;
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+  background-clip:text;
   font-style:normal;
 }
 .about-right{padding-top:100px}
@@ -394,6 +403,7 @@ nav.scrolled{
   padding:7px 16px;
   transition:all .25s;
   position:relative;overflow:hidden;
+  cursor:default;
 }
 .chip::before{
   content:'';position:absolute;inset:0;
@@ -474,7 +484,7 @@ nav.scrolled{
   text-decoration:none;
   position:relative;overflow:hidden;
   transition:all .35s;
-  cursor:none;
+  cursor:default;
 }
 .work-card::before{
   content:'';
@@ -504,7 +514,10 @@ nav.scrolled{
   letter-spacing:.12em;text-transform:uppercase;
   color:var(--muted);margin-bottom:16px;
 }
-.w-tags{display:flex;gap:8px;flex-wrap:wrap}
+.w-desc{
+  font-size:.85rem;color:var(--muted2);margin-top:10px;line-height:1.7;
+}
+.w-tags{display:flex;gap:8px;flex-wrap:wrap;margin-top:16px}
 .w-tag{
   font-family:var(--ff-mono);font-size:.55rem;
   letter-spacing:.1em;text-transform:uppercase;
@@ -551,9 +564,10 @@ nav.scrolled{
 .metric-n{
   font-size:4.5rem;font-weight:900;
   background:linear-gradient(135deg,var(--gold),var(--gold2),#fff);
-  -webkit-background-clip:text;-webkit-text-fill-color:transparent;
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+  background-clip:text;
   line-height:1;display:block;
-  counter-reset:num;
 }
 .metric-l{
   font-family:var(--ff-mono);font-size:.6rem;
@@ -700,7 +714,9 @@ nav.scrolled{
 .contact-big .word1{
   display:block;
   background:linear-gradient(135deg,#fff,rgba(255,255,255,.5));
-  -webkit-background-clip:text;-webkit-text-fill-color:transparent;
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+  background-clip:text;
 }
 .contact-big .word2{
   display:block;
@@ -710,11 +726,19 @@ nav.scrolled{
 .contact-big .word3{
   display:block;
   background:linear-gradient(135deg,var(--gold),var(--gold2));
-  -webkit-background-clip:text;-webkit-text-fill-color:transparent;
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+  background-clip:text;
 }
 .contact-sub{
   font-size:.9rem;line-height:1.8;
   color:var(--muted);margin-top:28px;max-width:400px;
+}
+.contact-open{
+  font-family:var(--ff-mono);font-size:.7rem;
+  letter-spacing:.1em;text-transform:uppercase;
+  color:var(--gold);margin-top:16px;
+  display:block;
 }
 .contact-links{display:flex;flex-direction:column;gap:3px}
 .c-link{
@@ -817,6 +841,8 @@ footer{
   <ul class="nav-links">
     <li><a href="#about">About</a></li>
     <li><a href="#work">Work</a></li>
+    <li><a href="#case-studies">Case Studies</a></li>
+    <li><a href="#projects">Projects</a></li>
     <li><a href="#expertise">Skills</a></li>
     <li><a href="#process">Process</a></li>
     <li><a href="#contact">Contact</a></li>
@@ -836,14 +862,13 @@ footer{
       <span class="line1">ABHISHEK</span>
       <span class="line2">KUMAR</span>
     </h1>
-    <p class="hero-tagline">I build products that move the needle.</p>
-    <p class="hero-desc">Assistant Product Manager at Capri Global, building lending products 
-that improve conversion, reduce TAT, and scale co-lending workflows.</p>
-   <div class="hero-ctas">
-  <a href="#work" class="btn-gold">Explore My Work</a>
-  <a href="#contact" class="btn-outline">Let's Connect</a>
-  <a href="resume.pdf" class="btn-outline" download>Download Resume</a>
-</div>
+    <p class="hero-tagline">I build lending products that reduce TAT, improve conversion, and scale co-lending systems.</p>
+    <p class="hero-desc">Assistant Product Manager at Capri Global, building lending products that improve conversion, reduce TAT, and scale co-lending workflows.</p>
+    <div class="hero-ctas">
+      <a href="#work" class="btn-gold">Explore My Work</a>
+      <a href="#contact" class="btn-outline">Let's Connect</a>
+      <a href="resume.pdf" class="btn-outline" download>Download Resume</a>
+    </div>
   </div>
 
   <div class="hero-stats">
@@ -869,7 +894,7 @@ that improve conversion, reduce TAT, and scale co-lending workflows.</p>
       </div>
     </div>
     <div class="stat-pill">
-      <div class="stat-num">10 Million+</div>
+      <div class="stat-num">10M+</div>
       <div class="stat-info">
         <div style="font-weight:700;font-size:.9rem">Users</div>
         <div class="label">Impacted</div>
@@ -882,9 +907,10 @@ that improve conversion, reduce TAT, and scale co-lending workflows.</p>
     Scroll
   </div>
 </section>
-  <section id="case-studies" class="section">
-  <div class="section-inner">
 
+<!-- CASE STUDIES -->
+<section id="case-studies" class="section">
+  <div class="section-inner">
     <div class="reveal">
       <div class="s-label">Deep Dive</div>
       <h2 class="s-title">
@@ -894,24 +920,22 @@ that improve conversion, reduce TAT, and scale co-lending workflows.</p>
     </div>
 
     <div class="work-list">
-
       <div class="work-card reveal">
         <div class="w-num">01</div>
         <div class="w-main">
           <div class="w-title">Gold Loan Journey Optimization</div>
           <div class="w-sub">Capri Global · Lending</div>
-
-          <p style="font-size:.85rem;color:#aaa;margin-top:10px;">
+          <p class="w-desc">
             Reduced loan disbursal TAT by 30% by improving KYC flow,
             automating validation, and optimizing LOS workflows.
           </p>
-
           <div class="w-tags">
             <span class="w-tag">TAT ↓ 30%</span>
             <span class="w-tag">Conversion ↑</span>
             <span class="w-tag">FinTech</span>
           </div>
         </div>
+        <div class="w-arrow">↗</div>
       </div>
 
       <div class="work-card reveal">
@@ -919,19 +943,18 @@ that improve conversion, reduce TAT, and scale co-lending workflows.</p>
         <div class="w-main">
           <div class="w-title">Co-Lending Workflow System</div>
           <div class="w-sub">Bank Integration</div>
-
-          <p style="font-size:.85rem;color:#aaa;margin-top:10px;">
-            Built structured workflows to reduce manual coordination with banks,
-            improving approval speed and operational efficiency.
+          <p class="w-desc">
+            <strong style="color:var(--muted2)">Problem:</strong> Manual coordination with partner banks delayed approvals<br/>
+            <strong style="color:var(--muted2)">Action:</strong> Designed standardized co-lending workflow + automated status sync<br/>
+            <strong style="color:var(--muted2)">Impact:</strong> Reduced approval time and improved partner efficiency
           </p>
-
           <div class="w-tags">
             <span class="w-tag">Automation</span>
             <span class="w-tag">FinTech</span>
           </div>
         </div>
+        <div class="w-arrow">↗</div>
       </div>
-
     </div>
   </div>
 </section>
@@ -951,7 +974,7 @@ that improve conversion, reduce TAT, and scale co-lending workflows.</p>
     <div class="ticker-item">0 → 1 Products <span class="dot">◆</span></div>
     <div class="ticker-item">API Products <span class="dot">◆</span></div>
     <div class="ticker-item">Gold Loan Tech <span class="dot">◆</span></div>
-    <!-- duplicate -->
+    <!-- duplicate for seamless loop -->
     <div class="ticker-item">Product Strategy <span class="dot">◆</span></div>
     <div class="ticker-item">Roadmap Planning <span class="dot">◆</span></div>
     <div class="ticker-item">User Research <span class="dot">◆</span></div>
@@ -1061,6 +1084,235 @@ that improve conversion, reduce TAT, and scale co-lending workflows.</p>
   </div>
 </section>
 
+<!-- WORK -->
+<section id="work" class="section">
+  <div class="section-inner">
+    <div class="reveal">
+      <div class="s-label">Experience</div>
+      <h2 class="s-title">
+        <span class="filled">MY</span><br/>
+        <span class="outline">WORK.</span>
+      </h2>
+    </div>
+
+    <div class="work-list">
+      <div class="work-card reveal">
+        <div class="w-num">01</div>
+        <div class="w-main">
+          <div class="w-title">Gold Loan Journey Optimization</div>
+          <div class="w-sub">Capri Global · Lending</div>
+          <p class="w-desc">
+            <strong style="color:var(--muted2)">Problem:</strong> High drop-offs during onboarding due to manual KYC validation<br/>
+            <strong style="color:var(--muted2)">Action:</strong> Redesigned flow + automated validation + reduced steps<br/>
+            <strong style="color:var(--muted2)">Impact:</strong> 30% faster disbursal, improved conversion
+          </p>
+          <div class="w-impact">User Drop-off ↓ 22%</div>
+          <div class="w-tags">
+            <span class="w-tag">TAT ↓ 30%</span>
+            <span class="w-tag">Conversion ↑</span>
+            <span class="w-tag">FinTech</span>
+          </div>
+        </div>
+        <div class="w-arrow">↗</div>
+      </div>
+
+      <div class="work-card reveal">
+        <div class="w-num">02</div>
+        <div class="w-main">
+          <div class="w-title">Co-Lending Workflow System</div>
+          <div class="w-sub">Bank Integration</div>
+          <p class="w-desc">
+            Built structured workflows to reduce manual coordination with banks,
+            improving approval speed and operational efficiency.
+          </p>
+          <div class="w-tags">
+            <span class="w-tag">Automation</span>
+            <span class="w-tag">FinTech</span>
+          </div>
+        </div>
+        <div class="w-arrow">↗</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="section">
+  <div class="section-inner">
+    <div class="reveal">
+      <div class="s-label">Build Work</div>
+      <h2 class="s-title">
+        <span class="filled">PRO</span><br/>
+        <span class="outline">JECTS.</span>
+      </h2>
+    </div>
+
+    <div class="work-list">
+      <div class="work-card reveal">
+        <div class="w-num">01</div>
+        <div class="w-main">
+          <div class="w-title">Mental Health MVP</div>
+          <p class="w-desc">
+            Designed MVP for emotional resilience targeting young professionals,
+            focusing on retention loops and habit formation.
+          </p>
+        </div>
+        <div class="w-arrow">↗</div>
+      </div>
+
+      <div class="work-card reveal">
+        <div class="w-num">02</div>
+        <div class="w-main">
+          <div class="w-title">Zepto Growth Strategy</div>
+          <p class="w-desc">Improved scheduled delivery adoption.</p>
+        </div>
+        <div class="w-arrow">↗</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HOW I BUILD -->
+<section class="section">
+  <div class="section-inner">
+    <div class="reveal">
+      <div class="s-label">My Approach</div>
+      <h2 class="s-title">
+        <span class="filled">HOW I</span><br/>
+        <span class="outline">BUILD.</span>
+      </h2>
+    </div>
+
+    <div class="reveal reveal-delay-1">
+      <p style="max-width:700px;color:var(--muted2);font-size:.95rem;line-height:1.8;">
+        I approach product development through a structured framework:
+        Problem → User → Data → Experiment → Scale.
+      </p>
+      <p style="max-width:700px;color:var(--muted2);font-size:.95rem;line-height:1.8;margin-top:16px;">
+        Every feature I ship is tied to measurable outcomes like conversion,
+        TAT reduction, or operational efficiency improvement.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- METRICS -->
+<section id="metrics" class="section">
+  <div class="section-inner">
+    <div class="metrics-grid reveal">
+      <div class="metric">
+        <span class="metric-n">30%</span>
+        <div class="metric-l">TAT Reduction</div>
+        <div class="metric-desc">Gold loan disbursal time cut through KYC automation</div>
+      </div>
+      <div class="metric">
+        <span class="metric-n">22%</span>
+        <div class="metric-l">Drop-off Reduction</div>
+        <div class="metric-desc">User drop-off reduced via onboarding redesign</div>
+      </div>
+      <div class="metric">
+        <span class="metric-n">10M+</span>
+        <div class="metric-l">Users Impacted</div>
+        <div class="metric-desc">Across lending lifecycle products at scale</div>
+      </div>
+      <div class="metric">
+        <span class="metric-n">3×</span>
+        <div class="metric-l">Growth Average</div>
+        <div class="metric-desc">Average growth multiplier across shipped products</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section id="process" class="section">
+  <div class="section-inner">
+    <div class="reveal">
+      <div class="s-label">My Framework</div>
+      <h2 class="s-title">
+        <span class="filled">THE</span><br/>
+        <span class="outline">PROCESS.</span>
+      </h2>
+    </div>
+
+    <div class="process-timeline reveal">
+      <div class="p-step">
+        <div class="p-node">🔍</div>
+        <div class="p-name">Discover</div>
+        <div class="p-desc">User research, stakeholder interviews, data analysis to define the real problem</div>
+      </div>
+      <div class="p-step">
+        <div class="p-node">📐</div>
+        <div class="p-name">Define</div>
+        <div class="p-desc">PRDs, user stories, acceptance criteria, and measurable success metrics</div>
+      </div>
+      <div class="p-step">
+        <div class="p-node">✏️</div>
+        <div class="p-name">Design</div>
+        <div class="p-desc">Wireframes, prototypes, and cross-functional alignment across teams</div>
+      </div>
+      <div class="p-step">
+        <div class="p-node">🚢</div>
+        <div class="p-name">Deliver</div>
+        <div class="p-desc">Agile execution, sprint planning, and iterative build-measure-learn cycles</div>
+      </div>
+      <div class="p-step">
+        <div class="p-node">📈</div>
+        <div class="p-name">Optimize</div>
+        <div class="p-desc">Post-launch analytics, funnel analysis, and continuous improvement loops</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TOOLS -->
+<section id="tools" class="section">
+  <div class="section-inner">
+    <div class="reveal">
+      <div class="s-label">Tech Stack</div>
+      <h2 class="s-title">
+        <span class="filled">TOOLS</span><br/>
+        <span class="outline">I USE.</span>
+      </h2>
+    </div>
+
+    <div class="tools-grid reveal">
+      <div class="tool">
+        <span class="tool-e">🤖</span>
+        <div class="tool-n">ChatGPT</div>
+      </div>
+      <div class="tool">
+        <span class="tool-e">⚡</span>
+        <div class="tool-n">Claude</div>
+      </div>
+      <div class="tool">
+        <span class="tool-e">🎨</span>
+        <div class="tool-n">Figma</div>
+      </div>
+      <div class="tool">
+        <span class="tool-e">🗺️</span>
+        <div class="tool-n">Whimsical</div>
+      </div>
+      <div class="tool">
+        <span class="tool-e">💼</span>
+        <div class="tool-n">Salesforce CRM</div>
+      </div>
+      <div class="tool">
+        <span class="tool-e">📋</span>
+        <div class="tool-n">Jira</div>
+      </div>
+      <div class="tool">
+        <span class="tool-e">🔌</span>
+        <div class="tool-n">Postman</div>
+      </div>
+      <div class="tool">
+        <span class="tool-e">🗄️</span>
+        <div class="tool-n">SQL</div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- TESTIMONIALS -->
 <section id="testimonials" class="section">
   <div class="section-inner">
@@ -1117,6 +1369,7 @@ that improve conversion, reduce TAT, and scale co-lending workflows.</p>
           <span class="word3">Together</span>
         </h2>
         <p class="contact-sub">I'm always open to discussing product strategy, FinTech innovations, or new opportunities. Feel free to reach out!</p>
+        <span class="contact-open">Open to Product Manager roles across FinTech &amp; SaaS</span>
       </div>
       <div class="contact-links reveal reveal-delay-1">
         <a href="mailto:kr.abhi75@gmail.com" class="c-link">
@@ -1126,15 +1379,15 @@ that improve conversion, reduce TAT, and scale co-lending workflows.</p>
           </div>
           <div class="c-arrow">↗</div>
         </a>
-        <a href="https://www.linkedin.com/in/abhishek-kumar75/" class="c-link">
+        <a href="https://www.linkedin.com/in/abhishek-kumar75/" class="c-link" target="_blank" rel="noopener noreferrer">
           <div class="c-link-info">
             <div class="c-name">LinkedIn</div>
             <div class="c-sub">Connect with me</div>
           </div>
           <div class="c-arrow">↗</div>
         </a>
-        <a href="https://twitter.com/abhishek" class="c-link">
-         <div class="c-link-info">
+        <a href="https://twitter.com/abhishek" class="c-link" target="_blank" rel="noopener noreferrer">
+          <div class="c-link-info">
             <div class="c-name">Twitter</div>
             <div class="c-sub">Follow for updates</div>
           </div>
@@ -1152,7 +1405,7 @@ that improve conversion, reduce TAT, and scale co-lending workflows.</p>
 </footer>
 
 <script>
-// Cursor tracking
+// ── CURSOR TRACKING ──
 const cur = document.getElementById('cur');
 const curRing = document.getElementById('cur-ring');
 
@@ -1163,94 +1416,136 @@ document.addEventListener('mousemove', (e) => {
   curRing.style.top = e.clientY + 'px';
 });
 
-// Scroll detection for nav
+// ── NAV SCROLL DETECTION ──
 const nav = document.getElementById('nav');
 window.addEventListener('scroll', () => {
-  if (window.scrollY > 50) {
-    nav.classList.add('scrolled');
-  } else {
-    nav.classList.remove('scrolled');
-  }
+  nav.classList.toggle('scrolled', window.scrollY > 50);
 });
 
-// Reveal animations on scroll
+// ── REVEAL ON SCROLL ──
 const reveals = document.querySelectorAll('.reveal');
-
-const observer = new IntersectionObserver((entries) => {
+const revealObserver = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
       entry.target.classList.add('in');
-      observer.unobserve(entry.target);
+      revealObserver.unobserve(entry.target);
     }
   });
 }, { threshold: 0.1 });
+reveals.forEach((el) => revealObserver.observe(el));
 
-reveals.forEach((reveal) => {
-  observer.observe(reveal);
+// ── EXPERTISE CARD MOUSE GLOW ──
+document.querySelectorAll('[data-card]').forEach(card => {
+  card.addEventListener('mousemove', (e) => {
+    const rect = card.getBoundingClientRect();
+    const x = ((e.clientX - rect.left) / rect.width) * 100;
+    const y = ((e.clientY - rect.top) / rect.height) * 100;
+    card.style.setProperty('--mx', x + '%');
+    card.style.setProperty('--my', y + '%');
+  });
 });
 
-// Canvas animation for hero
+// ── HERO CANVAS PARTICLE ANIMATION ──
 const canvas = document.getElementById('heroCanvas');
 if (canvas) {
   const ctx = canvas.getContext('2d');
-  canvas.width = canvas.offsetWidth;
-  canvas.height = canvas.offsetHeight;
 
-  let particlesArray = [];
+  function resize() {
+    canvas.width = canvas.offsetWidth;
+    canvas.height = canvas.offsetHeight;
+  }
+  resize();
 
   class Particle {
     constructor() {
+      this.reset();
+    }
+    reset() {
       this.x = Math.random() * canvas.width;
       this.y = Math.random() * canvas.height;
       this.size = Math.random() * 2 + 0.5;
       this.speedX = Math.random() * 0.5 - 0.25;
       this.speedY = Math.random() * 0.5 - 0.25;
-      this.opacity = Math.random() * 0.5 + 0.2;
+      this.opacity = Math.random() * 0.5 + 0.1;
     }
-
     update() {
       this.x += this.speedX;
       this.y += this.speedY;
-
       if (this.x > canvas.width) this.x = 0;
       if (this.x < 0) this.x = canvas.width;
       if (this.y > canvas.height) this.y = 0;
       if (this.y < 0) this.y = canvas.height;
     }
-
     draw() {
-      ctx.fillStyle = `rgba(201, 168, 76, ${this.opacity})`;
+      ctx.fillStyle = `rgba(201,168,76,${this.opacity})`;
       ctx.beginPath();
       ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
       ctx.fill();
     }
   }
 
-  function init() {
-    particlesArray = [];
-    for (let i = 0; i < 50; i++) {
-      particlesArray.push(new Particle());
-    }
-  }
+  const particles = Array.from({ length: 80 }, () => new Particle());
 
   function animate() {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
-    for (let i = 0; i < particlesArray.length; i++) {
-      particlesArray[i].update();
-      particlesArray[i].draw();
+
+    // Draw connection lines between nearby particles
+    for (let i = 0; i < particles.length; i++) {
+      for (let j = i + 1; j < particles.length; j++) {
+        const dx = particles[i].x - particles[j].x;
+        const dy = particles[i].y - particles[j].y;
+        const dist = Math.sqrt(dx * dx + dy * dy);
+        if (dist < 120) {
+          ctx.strokeStyle = `rgba(201,168,76,${0.08 * (1 - dist / 120)})`;
+          ctx.lineWidth = 0.5;
+          ctx.beginPath();
+          ctx.moveTo(particles[i].x, particles[i].y);
+          ctx.lineTo(particles[j].x, particles[j].y);
+          ctx.stroke();
+        }
+      }
     }
+
+    particles.forEach(p => { p.update(); p.draw(); });
     requestAnimationFrame(animate);
   }
 
-  init();
   animate();
-
-  window.addEventListener('resize', () => {
-    canvas.width = canvas.offsetWidth;
-    canvas.height = canvas.offsetHeight;
-  });
+  window.addEventListener('resize', resize);
 }
-</script>
 
+// ── COUNTER ANIMATION FOR METRICS ──
+function animateCounter(el, target, suffix = '') {
+  const isFloat = target % 1 !== 0;
+  const duration = 2000;
+  const start = performance.now();
+  const update = (time) => {
+    const elapsed = Math.min((time - start) / duration, 1);
+    const eased = 1 - Math.pow(1 - elapsed, 3);
+    const value = isFloat ? (eased * target).toFixed(1) : Math.round(eased * target);
+    el.textContent = value + suffix;
+    if (elapsed < 1) requestAnimationFrame(update);
+  };
+  requestAnimationFrame(update);
+}
+
+const metricObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      const nums = entry.target.querySelectorAll('.metric-n');
+      nums.forEach(n => {
+        const raw = n.textContent.trim();
+        const suffix = raw.replace(/[\d.]/g, '');
+        const num = parseFloat(raw.replace(/[^0-9.]/g, ''));
+        if (!isNaN(num)) animateCounter(n, num, suffix);
+      });
+      metricObserver.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.3 });
+
+const metricsEl = document.querySelector('.metrics-grid');
+if (metricsEl) metricObserver.observe(metricsEl);
+</script>
 </body>
 </html>

@@ -3,7 +3,26 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Abhishek Kumar — Product Manager</title>
+
+<!-- SEO -->
+<title>Abhishek Kumar | Product Manager Portfolio</title>
+<meta name="description" content="Abhishek Kumar - Product Manager specializing in FinTech, lending systems, co-lending workflows, and growth optimization.">
+<meta name="keywords" content="Product Manager, FinTech, Lending, PM Portfolio, India, Abhishek Kumar">
+<meta name="author" content="Abhishek Kumar">
+<link rel="canonical" href="https://abhishekkumarproduct.co.in/">
+
+<!-- OPEN GRAPH (WhatsApp / LinkedIn) -->
+<meta property="og:title" content="Abhishek Kumar | Product Manager">
+<meta property="og:description" content="Building lending products that reduce TAT, improve conversion, and scale co-lending systems.">
+<meta property="og:image" content="https://abhishekkumarproduct.co.in/preview.png">
+<meta property="og:url" content="https://abhishekkumarproduct.co.in/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Abhishek Kumar Portfolio">
+
+<!-- TWITTER -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Abhishek Kumar | Product Manager">
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%2304040a'/%3E%3Ctext x='16' y='18' font-family='%22JetBrains Mono%22, monospace' font-size='18' font-weight='bold' fill='%23c9a84c' text-anchor='middle'%3EAK%3C/text%3E%3C/svg%3E">
 <link href="https://fonts.googleapis.com/css2?family=Cabinet+Grotesk:wght@300;400;500;700;800;900&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -484,7 +503,8 @@ nav.scrolled{
   text-decoration:none;
   position:relative;overflow:hidden;
   transition:all .35s;
-  cursor:default;
+  cursor:pointer;
+  color:inherit;
 }
 .work-card::before{
   content:'';
@@ -626,7 +646,8 @@ nav.scrolled{
   transition:all .25s;position:relative;overflow:hidden;
 }
 .tool::before{
-  content:'';position:absolute;inset:0;
+  content:'';
+  position:absolute;inset:0;
   background:radial-gradient(circle at 50% 0%,rgba(201,168,76,0.08),transparent 60%);
   opacity:0;transition:opacity .25s;transform:translateY(100%);
 }
@@ -908,57 +929,6 @@ footer{
   </div>
 </section>
 
-<!-- CASE STUDIES -->
-<section id="case-studies" class="section">
-  <div class="section-inner">
-    <div class="reveal">
-      <div class="s-label">Deep Dive</div>
-      <h2 class="s-title">
-        <span class="filled">CASE</span><br/>
-        <span class="outline">STUDIES.</span>
-      </h2>
-    </div>
-
-    <div class="work-list">
-      <div class="work-card reveal">
-        <div class="w-num">01</div>
-        <div class="w-main">
-          <div class="w-title">Gold Loan Journey Optimization</div>
-          <div class="w-sub">Capri Global · Lending</div>
-          <p class="w-desc">
-            Reduced loan disbursal TAT by 30% by improving KYC flow,
-            automating validation, and optimizing LOS workflows.
-          </p>
-          <div class="w-tags">
-            <span class="w-tag">TAT ↓ 30%</span>
-            <span class="w-tag">Conversion ↑</span>
-            <span class="w-tag">FinTech</span>
-          </div>
-        </div>
-        <div class="w-arrow">↗</div>
-      </div>
-
-      <div class="work-card reveal">
-        <div class="w-num">02</div>
-        <div class="w-main">
-          <div class="w-title">Co-Lending Workflow System</div>
-          <div class="w-sub">Bank Integration</div>
-          <p class="w-desc">
-            <strong style="color:var(--muted2)">Problem:</strong> Manual coordination with partner banks delayed approvals<br/>
-            <strong style="color:var(--muted2)">Action:</strong> Designed standardized co-lending workflow + automated status sync<br/>
-            <strong style="color:var(--muted2)">Impact:</strong> Reduced approval time and improved partner efficiency
-          </p>
-          <div class="w-tags">
-            <span class="w-tag">Automation</span>
-            <span class="w-tag">FinTech</span>
-          </div>
-        </div>
-        <div class="w-arrow">↗</div>
-      </div>
-    </div>
-  </div>
-</section>
-
 <!-- TICKER -->
 <div class="ticker">
   <div class="ticker-inner">
@@ -974,7 +944,6 @@ footer{
     <div class="ticker-item">0 → 1 Products <span class="dot">◆</span></div>
     <div class="ticker-item">API Products <span class="dot">◆</span></div>
     <div class="ticker-item">Gold Loan Tech <span class="dot">◆</span></div>
-    <!-- duplicate for seamless loop -->
     <div class="ticker-item">Product Strategy <span class="dot">◆</span></div>
     <div class="ticker-item">Roadmap Planning <span class="dot">◆</span></div>
     <div class="ticker-item">User Research <span class="dot">◆</span></div>
@@ -1096,7 +1065,7 @@ footer{
     </div>
 
     <div class="work-list">
-      <div class="work-card reveal">
+      <a class="work-card reveal" href="https://github.com/krabhi75" target="_blank" rel="noopener noreferrer">
         <div class="w-num">01</div>
         <div class="w-main">
           <div class="w-title">Gold Loan Journey Optimization</div>
@@ -1114,16 +1083,17 @@ footer{
           </div>
         </div>
         <div class="w-arrow">↗</div>
-      </div>
+      </a>
 
-      <div class="work-card reveal">
+      <a class="work-card reveal" href="https://github.com/krabhi75" target="_blank" rel="noopener noreferrer">
         <div class="w-num">02</div>
         <div class="w-main">
           <div class="w-title">Co-Lending Workflow System</div>
           <div class="w-sub">Bank Integration</div>
           <p class="w-desc">
-            Built structured workflows to reduce manual coordination with banks,
-            improving approval speed and operational efficiency.
+            <strong style="color:var(--muted2)">Problem:</strong> High drop-offs during onboarding due to manual KYC validation<br/>
+            <strong style="color:var(--muted2)">Action:</strong> Redesigned flow + automated validation + reduced steps<br/>
+            <strong style="color:var(--muted2)">Impact:</strong> 30% faster disbursal, improved conversion
           </p>
           <div class="w-tags">
             <span class="w-tag">Automation</span>
@@ -1131,7 +1101,7 @@ footer{
           </div>
         </div>
         <div class="w-arrow">↗</div>
-      </div>
+      </a>
     </div>
   </div>
 </section>
@@ -1142,32 +1112,36 @@ footer{
     <div class="reveal">
       <div class="s-label">Build Work</div>
       <h2 class="s-title">
-        <span class="filled">PRO</span><br/>
-        <span class="outline">JECTS.</span>
+        <span class="filled">PROJECT</span>
       </h2>
     </div>
 
     <div class="work-list">
-      <div class="work-card reveal">
+      <a class="work-card reveal" href="https://github.com/krabhi75" target="_blank" rel="noopener noreferrer">
         <div class="w-num">01</div>
         <div class="w-main">
           <div class="w-title">Mental Health MVP</div>
           <p class="w-desc">
-            Designed MVP for emotional resilience targeting young professionals,
-            focusing on retention loops and habit formation.
+            <strong style="color:var(--muted2)">Problem:</strong> High drop-offs during onboarding due to manual KYC validation<br/>
+            <strong style="color:var(--muted2)">Action:</strong> Redesigned flow + automated validation + reduced steps<br/>
+            <strong style="color:var(--muted2)">Impact:</strong> 30% faster disbursal, improved conversion
           </p>
         </div>
         <div class="w-arrow">↗</div>
-      </div>
+      </a>
 
-      <div class="work-card reveal">
+      <a class="work-card reveal" href="https://github.com/krabhi75" target="_blank" rel="noopener noreferrer">
         <div class="w-num">02</div>
         <div class="w-main">
           <div class="w-title">Zepto Growth Strategy</div>
-          <p class="w-desc">Improved scheduled delivery adoption.</p>
+          <p class="w-desc">
+            <strong style="color:var(--muted2)">Problem:</strong> High drop-offs during onboarding due to manual KYC validation<br/>
+            <strong style="color:var(--muted2)">Action:</strong> Redesigned flow + automated validation + reduced steps<br/>
+            <strong style="color:var(--muted2)">Impact:</strong> 30% faster disbursal, improved conversion
+          </p>
         </div>
         <div class="w-arrow">↗</div>
-      </div>
+      </a>
     </div>
   </div>
 </section>
@@ -1220,6 +1194,57 @@ footer{
         <div class="metric-l">Growth Average</div>
         <div class="metric-desc">Average growth multiplier across shipped products</div>
       </div>
+    </div>
+  </div>
+</section>
+
+<!-- CASE STUDIES -->
+<section id="case-studies" class="section">
+  <div class="section-inner">
+    <div class="reveal">
+      <div class="s-label">Deep Dive</div>
+      <h2 class="s-title">
+        <span class="filled">CASE</span><br/>
+        <span class="outline">STUDIES.</span>
+      </h2>
+    </div>
+
+    <div class="work-list">
+      <a class="work-card reveal" href="https://github.com/krabhi75" target="_blank" rel="noopener noreferrer">
+        <div class="w-num">01</div>
+        <div class="w-main">
+          <div class="w-title">Gold Loan Journey Optimization</div>
+          <div class="w-sub">Capri Global · Lending</div>
+          <p class="w-desc">
+            Reduced loan disbursal TAT by 30% by improving KYC flow,
+            automating validation, and optimizing LOS workflows.
+          </p>
+          <div class="w-tags">
+            <span class="w-tag">TAT ↓ 30%</span>
+            <span class="w-tag">Conversion ↑</span>
+            <span class="w-tag">FinTech</span>
+          </div>
+        </div>
+        <div class="w-arrow">↗</div>
+      </a>
+
+      <a class="work-card reveal" href="https://github.com/krabhi75" target="_blank" rel="noopener noreferrer">
+        <div class="w-num">02</div>
+        <div class="w-main">
+          <div class="w-title">Co-Lending Workflow System</div>
+          <div class="w-sub">Bank Integration</div>
+          <p class="w-desc">
+            <strong style="color:var(--muted2)">Problem:</strong> High drop-offs during onboarding due to manual KYC validation<br/>
+            <strong style="color:var(--muted2)">Action:</strong> Redesigned flow + automated validation + reduced steps<br/>
+            <strong style="color:var(--muted2)">Impact:</strong> 30% faster disbursal, improved conversion
+          </p>
+          <div class="w-tags">
+            <span class="w-tag">Automation</span>
+            <span class="w-tag">FinTech</span>
+          </div>
+        </div>
+        <div class="w-arrow">↗</div>
+      </a>
     </div>
   </div>
 </section>
@@ -1278,6 +1303,22 @@ footer{
 
     <div class="tools-grid reveal">
       <div class="tool">
+        <span class="tool-e">📋</span>
+        <div class="tool-n">Jira</div>
+      </div>
+      <div class="tool">
+        <span class="tool-e">📚</span>
+        <div class="tool-n">Confluence</div>
+      </div>
+      <div class="tool">
+        <span class="tool-e">📝</span>
+        <div class="tool-n">Notion</div>
+      </div>
+      <div class="tool">
+        <span class="tool-e">💻</span>
+        <div class="tool-n">Cursor</div>
+      </div>
+      <div class="tool">
         <span class="tool-e">🤖</span>
         <div class="tool-n">ChatGPT</div>
       </div>
@@ -1296,10 +1337,6 @@ footer{
       <div class="tool">
         <span class="tool-e">💼</span>
         <div class="tool-n">Salesforce CRM</div>
-      </div>
-      <div class="tool">
-        <span class="tool-e">📋</span>
-        <div class="tool-n">Jira</div>
       </div>
       <div class="tool">
         <span class="tool-e">🔌</span>
@@ -1386,10 +1423,10 @@ footer{
           </div>
           <div class="c-arrow">↗</div>
         </a>
-        <a href="https://twitter.com/abhishek" class="c-link" target="_blank" rel="noopener noreferrer">
+        <a href="https://calendar.app.google/uvaMGjWa1poffkUo7" class="c-link" target="_blank" rel="noopener noreferrer">
           <div class="c-link-info">
-            <div class="c-name">Twitter</div>
-            <div class="c-sub">Follow for updates</div>
+            <div class="c-name">Book Calendar</div>
+            <div class="c-sub">Schedule a meeting</div>
           </div>
           <div class="c-arrow">↗</div>
         </a>

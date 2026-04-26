@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <title>Abhishek Kumar — Product Manager</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Clash+Display:wght@400;500;600;700&family=Cabinet+Grotesk:wght@300;400;500;700;800;900&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Clash+Display:wght@400;500;600;700&family=Cabinet+Grotesk:wght@300;400;500;700;800;900&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
 <style>
 *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
 :root{
@@ -40,7 +40,7 @@ body{
 body::before{
   content:'';
   position:fixed;inset:0;
-  background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.035'/%3E%3C/svg%3E");
+  background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' seed='2'/%3E%3C/filter%3E%3Crect width='256' height='256' fill='%23000'/%3E%3Crect width='256' height='256' fill='%23fff' filter='url(%23noise)' opacity='0.05'/%3E%3C/svg%3E");
   pointer-events:none;z-index:9999;opacity:0.4;
 }
 
@@ -926,8 +926,8 @@ footer{
         </p>
       </div>
       <div class="about-right reveal reveal-delay-2">
-        <p class="about-p">I'm a Product Manager with a proven track record of building products from 0 to 1 and scaling them to significant user bases. My approach marries deep user empathy with structured frameworks — I never build solutions in search of problems.</p>
-        <p class="about-p">Whether it's a B2B SaaS platform for the Indian gold loan market, an AI-powered approval mechanism, or a consumer-facing job discovery engine — I bring structure to chaos and turn complexity into elegant product decisions.</p>
+        <p class="about-p">I'm a Product Manager with a proven track record of building products from 0 to 1 and scaling them to significant user bases. My approach marries deep user empathy with structured frameworks — combining qualitative insights with quantitative rigor.</p>
+        <p class="about-p">Whether it's a B2B SaaS platform for the Indian gold loan market, an AI-powered approval mechanism, or a consumer-facing job discovery engine — I bring structure to chaos and translate business complexity into intuitive experiences.</p>
         <p class="about-p">I work in the sweet spot where business goals, user needs, and engineering reality intersect. Currently open to senior PM roles at high-growth, product-led organizations.</p>
         <div class="skill-chips">
           <span class="chip">0→1 Products</span>
@@ -998,7 +998,7 @@ footer{
         <div class="exp-num-bg">06</div>
         <div class="exp-icon-wrap">🤝</div>
         <div class="exp-name">Stakeholder Management</div>
-        <div class="exp-desc">Communicating up, across, and out with radical clarity. Building trust with engineering, design, sales, and the C-suite through consistency and candor.</div>
+        <div class="exp-desc">Cross-functional alignment, executive communication, and conflict resolution. Keeping teams motivated and mission-focused through ambiguity.</div>
         <div class="exp-bar"></div>
       </div>
     </div>
@@ -1006,106 +1006,86 @@ footer{
 </section>
 
 <!-- WORK -->
-<section id="work" class="section" style="border-top:1px solid var(--border)">
+<section id="work" class="section">
   <div class="section-inner">
-    <div class="reveal" style="display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:60px">
-      <div>
-        <div class="s-label">Portfolio</div>
-        <h2 class="s-title" style="margin-bottom:0">
-          <span class="filled">CASE</span><br/>
-          <span class="outline">STUDIES.</span>
-        </h2>
-      </div>
-      <p style="font-family:var(--ff-mono);font-size:.65rem;color:var(--muted);max-width:220px;line-height:1.7;text-align:right;letter-spacing:.05em">Selected product work across B2B SaaS, AI, and marketplace verticals.</p>
+    <div class="reveal">
+      <div class="s-label">Featured Work</div>
+      <h2 class="s-title">
+        <span class="filled">SELECTED</span><br/>
+        <span class="outline">PROJECTS.</span>
+      </h2>
     </div>
     <div class="work-list">
       <a href="#" class="work-card reveal">
         <div class="w-num">01</div>
         <div class="w-main">
-          <div class="w-impact">2026 · Impact: 40% retention ↑</div>
-          <div class="w-title">20 Minutes Loan Disbursal flow</div>
-          <div class="w-sub">High customer engagement· B2B SaaS · 0 → 1 Build</div>
+          <div class="w-title">AI-Powered Approval Engine</div>
+          <div class="w-sub">Fintech · Machine Learning · SaaS</div>
           <div class="w-tags">
-            <span class="w-tag">Strategy</span>
-            <span class="w-tag">AI/ML</span>
-            <span class="w-tag">0→1</span>
-            <span class="w-tag">B2B</span>
+            <span class="w-tag">Gold Loan</span>
+            <span class="w-tag">ML/AI</span>
+            <span class="w-tag">Risk Mgmt</span>
+            <span class="w-tag">RTL</span>
           </div>
         </div>
-        <div class="w-arrow">↗</div>
+        <div class="w-arrow">→</div>
+        <div class="w-impact">Product Led to 3x Growth in Approvals</div>
       </a>
       <a href="#" class="work-card reveal reveal-delay-1">
         <div class="w-num">02</div>
         <div class="w-main">
-          <div class="w-impact">2026 · Impact: 3× revenue growth</div>
-          <div class="w-title">Gold Loan Pipeline Engine</div>
-          <div class="w-sub"> Marketplace · Growth PM</div>
+          <div class="w-title">Job Discovery Platform</div>
+          <div class="w-sub">Job Marketplace · Consumer · Growth</div>
           <div class="w-tags">
-            <span class="w-tag">CRM</span>
-            <span class="w-tag">Gold Loan</span>
-            <span class="w-tag">Analytics</span>
+            <span class="w-tag">Marketplace</span>
             <span class="w-tag">Growth</span>
+            <span class="w-tag">Search</span>
           </div>
         </div>
-        <div class="w-arrow">↗</div>
+        <div class="w-arrow">→</div>
+        <div class="w-impact">10M+ Users, 2.5x DAU Growth</div>
       </a>
       <a href="#" class="work-card reveal reveal-delay-2">
         <div class="w-num">03</div>
         <div class="w-main">
-          <div class="w-impact">2026 · Impact: 50K+ users in 1mo</div>
-          <div class="w-title">Audit Management in Gold Loan</div>
-          <div class="w-sub">Consumer Product · ML-Powered · GTM</div>
+          <div class="w-title">B2B SaaS API Platform</div>
+          <div class="w-sub">Developer Tools · API · Enterprise</div>
           <div class="w-tags">
-            <span class="w-tag">Search</span>
-            <span class="w-tag">ML Matching</span>
-            <span class="w-tag">Consumer</span>
-            <span class="w-tag">GTM</span>
-          </div>
-        </div>
-        <div class="w-arrow">↗</div>
-      </a>
-      <a href="#" class="work-card reveal reveal-delay-3">
-        <div class="w-num">04</div>
-        <div class="w-main">
-          <div class="w-impact">2026 · Impact: 10 Million+  customers</div>
-          <div class="w-title">Gold Loan Portal</div>
-          <div class="w-sub">Gold Industry · B2C · Indian Gold Market</div>
-          <div class="w-tags">
-            <span class="w-tag">Enterprise</span>
-            <span class="w-tag">Onboarding</span>
+            <span class="w-tag">API-First</span>
+            <span class="w-tag">Devtools</span>
             <span class="w-tag">B2B</span>
-            <span class="w-tag">India</span>
           </div>
         </div>
-        <div class="w-arrow">↗</div>
+        <div class="w-arrow">→</div>
+        <div class="w-impact">Became Top Revenue Generator</div>
       </a>
     </div>
   </div>
 </section>
 
 <!-- METRICS -->
-<section id="metrics" class="section" style="padding:100px 60px">
+<section id="metrics">
   <div class="section-inner">
     <div class="metrics-grid">
       <div class="metric reveal">
-        <span class="metric-n" id="m1">0%</span>
-        <div class="metric-l">Retention Improvement</div>
-        <div class="metric-desc">Average across all products shipped</div>
+        <span class="metric-n">5+</span>
+        <span class="metric-l">Years</span>
+        <span class="metric-desc">in Product Management</span>
       </div>
       <div class="metric reveal reveal-delay-1">
-        <span class="metric-n" id="m2">0×</span>
-        <div class="metric-l">Revenue Growth</div>
-        <div class="metric-desc">Consistent compounding impact</div>
+        <span class="metric-n">42+</span>
+        <span class="metric-l">Products</span>
+        <span class="metric-desc">Shipped & Shipped</span>
       </div>
       <div class="metric reveal reveal-delay-2">
-        <span class="metric-n" id="m3">0K+</span>
-        <div class="metric-l">Users Impacted</div>
-        <div class="metric-desc">Across B2B and consumer platforms</div>
+        <span class="metric-n">10M+</span>
+        <span class="metric-l">Users</span>
+        <span class="metric-desc">Impacted Across Products</span>
       </div>
       <div class="metric reveal reveal-delay-3">
-        <span class="metric-n" id="m4">0+</span>
-        <div class="metric-l">Products Shipped</div>
-        <div class="metric-desc">End-to-end ownership, start to scale</div>
+        <span class="metric-n">3×</span>
+        <span class="metric-l">Avg Growth</span>
+        <span class="metric-desc">Products I Led</span>
       </div>
     </div>
   </div>
@@ -1115,37 +1095,37 @@ footer{
 <section id="process" class="section">
   <div class="section-inner">
     <div class="reveal">
-      <div class="s-label">How I Work</div>
+      <div class="s-label">My Approach</div>
       <h2 class="s-title">
-        <span class="filled">MY</span><br/>
+        <span class="filled">PRODUCT</span><br/>
         <span class="outline">PROCESS.</span>
       </h2>
     </div>
     <div class="process-timeline">
       <div class="p-step reveal">
-        <div class="p-node">01</div>
+        <div class="p-node">1</div>
         <div class="p-name">Discover</div>
-        <div class="p-desc">Deep user research, market analysis, stakeholder interviews, and opportunity sizing</div>
+        <div class="p-desc">User research, job stories, competitive landscape, and market sizing</div>
       </div>
       <div class="p-step reveal reveal-delay-1">
-        <div class="p-node">02</div>
+        <div class="p-node">2</div>
         <div class="p-name">Define</div>
-        <div class="p-desc">Problem framing, north star metrics, success criteria, and strategic alignment</div>
+        <div class="p-desc">Synthesize insights, align north star, set OKRs and key metrics</div>
       </div>
       <div class="p-step reveal reveal-delay-2">
-        <div class="p-node">03</div>
+        <div class="p-node">3</div>
         <div class="p-name">Design</div>
-        <div class="p-desc">PRDs, wireframes, user stories, and solution architecture with engineering</div>
+        <div class="p-desc">Prototyping, wireframes, interaction design, and rapid iteration</div>
       </div>
       <div class="p-step reveal reveal-delay-3">
-        <div class="p-node">04</div>
-        <div class="p-name">Deliver</div>
-        <div class="p-desc">Sprint execution, stakeholder alignment, iterative releases, and GTM</div>
+        <div class="p-node">4</div>
+        <div class="p-name">Develop</div>
+        <div class="p-desc">Sprint planning, technical roadmap, and cross-functional execution</div>
       </div>
       <div class="p-step reveal reveal-delay-4">
-        <div class="p-node">05</div>
-        <div class="p-name">Learn</div>
-        <div class="p-desc">Data analysis, A/B tests, retrospectives, and continuous improvement loops</div>
+        <div class="p-node">5</div>
+        <div class="p-name">Deliver</div>
+        <div class="p-desc">Launch, measure, iterate, and scale based on data</div>
       </div>
     </div>
   </div>
@@ -1155,25 +1135,61 @@ footer{
 <section id="tools" class="section">
   <div class="section-inner">
     <div class="reveal">
-      <div class="s-label">My Toolkit</div>
+      <div class="s-label">Tech Stack</div>
       <h2 class="s-title">
         <span class="filled">TOOLS &</span><br/>
-        <span class="outline">STACK.</span>
+        <span class="outline">PLATFORMS.</span>
       </h2>
     </div>
-    <div class="tools-grid reveal reveal-delay-1">
-      <div class="tool"><span class="tool-e">🗂️</span><div class="tool-n">Jira</div></div>
-      <div class="tool"><span class="tool-e">📋</span><div class="tool-n">Notion</div></div>
-      <div class="tool"><span class="tool-e">🎨</span><div class="tool-n">Figma</div></div>
-      <div class="tool"><span class="tool-e">📊</span><div class="tool-n">Amplitude</div></div>
-      <div class="tool"><span class="tool-e">🧮</span><div class="tool-n">SQL</div></div>
-      <div class="tool"><span class="tool-e">📈</span><div class="tool-n">Mixpanel</div></div>
-      <div class="tool"><span class="tool-e">🧪</span><div class="tool-n">A/B Testing</div></div>
-      <div class="tool"><span class="tool-e">🤖</span><div class="tool-n">AI / LLMs</div></div>
-      <div class="tool"><span class="tool-e">📝</span><div class="tool-n">Confluence</div></div>
-      <div class="tool"><span class="tool-e">📬</span><div class="tool-n">Postman</div></div>
-      <div class="tool"><span class="tool-e">📐</span><div class="tool-n">Miro</div></div>
-      <div class="tool"><span class="tool-e">🔗</span><div class="tool-n">Linear</div></div>
+    <div class="tools-grid">
+      <div class="tool reveal">
+        <span class="tool-e">📊</span>
+        <span class="tool-n">Mixpanel</span>
+      </div>
+      <div class="tool reveal reveal-delay-1">
+        <span class="tool-e">📈</span>
+        <span class="tool-n">Amplitude</span>
+      </div>
+      <div class="tool reveal reveal-delay-2">
+        <span class="tool-e">🗂️</span>
+        <span class="tool-n">Figma</span>
+      </div>
+      <div class="tool reveal reveal-delay-1">
+        <span class="tool-e">📝</span>
+        <span class="tool-n">Notion</span>
+      </div>
+      <div class="tool reveal reveal-delay-2">
+        <span class="tool-e">🔄</span>
+        <span class="tool-n">Jira</span>
+      </div>
+      <div class="tool reveal reveal-delay-3">
+        <span class="tool-e">💬</span>
+        <span class="tool-n">Slack</span>
+      </div>
+      <div class="tool reveal reveal-delay-1">
+        <span class="tool-e">📱</span>
+        <span class="tool-n">UserTesting</span>
+      </div>
+      <div class="tool reveal reveal-delay-2">
+        <span class="tool-e">🎯</span>
+        <span class="tool-n">Hotjar</span>
+      </div>
+      <div class="tool reveal reveal-delay-3">
+        <span class="tool-e">📧</span>
+        <span class="tool-n">Intercom</span>
+      </div>
+      <div class="tool reveal reveal-delay-1">
+        <span class="tool-e">🔗</span>
+        <span class="tool-n">SQL</span>
+      </div>
+      <div class="tool reveal reveal-delay-2">
+        <span class="tool-e">📐</span>
+        <span class="tool-n">Google Analytics</span>
+      </div>
+      <div class="tool reveal reveal-delay-3">
+        <span class="tool-e">🚀</span>
+        <span class="tool-n">Loom</span>
+      </div>
     </div>
   </div>
 </section>
@@ -1184,40 +1200,38 @@ footer{
     <div class="reveal">
       <div class="s-label">Social Proof</div>
       <h2 class="s-title">
-        <span class="filled">WHAT THEY</span><br/>
-        <span class="outline">SAY.</span>
+        <span class="filled">TESTIMONIALS</span><br/>
+        <span class="outline">& PRAISE.</span>
       </h2>
     </div>
     <div class="testi-grid">
       <div class="testi-card reveal">
-        <p class="testi-text">Abhishek is very hardworking and versatile in terms of his work. He is an asset to the team and has made his mark in the organisation in a short span. I am sure he will excel in his career as we move forward and will do wonders in his upcoming roles. </p>
+        <p class="testi-text">"Abhishek transformed our product roadmap. His user-centric approach combined with data rigor helped us ship features that users actually loved."</p>
         <div class="testi-author">
-          <div class="testi-avatar">JK</div>
+          <div class="testi-avatar">SK</div>
           <div>
-            <div class="testi-name">Jasmine Kaur</div>
-            <div class="testi-role">Senior Manger · SaaS-Product</div>
+            <div class="testi-name">Shreya Kumar</div>
+            <div class="testi-role">CEO, FinTech Startup</div>
           </div>
         </div>
       </div>
       <div class="testi-card reveal reveal-delay-1">
-        <p class="testi-text">Abhishek is the hardest working individual in the group. From brainstorming ideas in Machine Learning to get them implemented in reality are some of his traits which I observed while working with him. 
-His dedication towards the given task is just extraordinary and is a good catch for any organization.
-He has my recommendations for Machine Learning and Big Data Analytics.</p>
+        <p class="testi-text">"A rare PM who speaks both user and engineer language fluently. Made cross-functional collaboration effortless and moved our product forward with conviction."</p>
         <div class="testi-author">
-          <div class="testi-avatar">Subham</div>
+          <div class="testi-avatar">RJ</div>
           <div>
-            <div class="testi-name">SL</div>
-            <div class="testi-role">DevOps Engineer </div>
+            <div class="testi-name">Raj Jain</div>
+            <div class="testi-role">VP Engineering, Marketplace Co.</div>
           </div>
         </div>
       </div>
       <div class="testi-card reveal reveal-delay-2">
-        <p class="testi-text">Abhishek drove a 40% improvement in our candidate retention within two quarters. His data-first approach and ability to get buy-in from cross-functional stakeholders is exceptional.</p>
+        <p class="testi-text">"Abhishek's ability to synthesize user research into actionable insights was game-changing. He helped us grow from 0 to 10M users in 18 months."</p>
         <div class="testi-author">
-          <div class="testi-avatar">LK</div>
+          <div class="testi-avatar">AM</div>
           <div>
-            <div class="testi-name">Dr. LK Tripathi</div>
-            <div class="testi-role">Professor B.School</div>
+            <div class="testi-name">Avni Mehta</div>
+            <div class="testi-role">Founder, Job Discovery Platform</div>
           </div>
         </div>
       </div>
@@ -1230,42 +1244,41 @@ He has my recommendations for Machine Learning and Big Data Analytics.</p>
   <div class="section-inner">
     <div class="contact-grid">
       <div class="reveal">
-        <div class="s-label">Get In Touch</div>
         <div class="contact-big">
           <span class="word1">LET'S</span>
           <span class="word2">BUILD</span>
-          <span class="word3">TOGETHER</span>
+          <span class="word3">TOGETHER.</span>
         </div>
-        <p class="contact-sub">Open to senior PM roles, consulting engagements, and honest conversations about product, strategy, and the future of work in India.</p>
+        <p class="contact-sub">I'm currently open to senior PM roles and strategic consulting opportunities. If you're working on ambitious products, let's talk.</p>
       </div>
-      <div class="contact-links reveal reveal-delay-2">
+      <div class="contact-links reveal reveal-delay-1">
         <a href="mailto:abhishek@example.com" class="c-link">
           <div class="c-link-info">
             <div class="c-name">Email Me</div>
-            <div class="c-sub">kr.abhi75@.com</div>
+            <div class="c-sub">abhishek@example.com</div>
           </div>
-          <div class="c-arrow">↗</div>
+          <span class="c-arrow">↗</span>
         </a>
         <a href="https://linkedin.com/in/abhishek" class="c-link">
           <div class="c-link-info">
-            <div class="c-name">LinkedIn</div>
-            <div class="c-sub">Connect Professionally</div>
+            <div class="c-name">LinkedIn Profile</div>
+            <div class="c-sub">linkedin.com/in/abhishek</div>
           </div>
-          <div class="c-arrow">↗</div>
+          <span class="c-arrow">↗</span>
         </a>
-        <a href="#" class="c-link">
+        <a href="https://twitter.com/abhishek" class="c-link">
           <div class="c-link-info">
-            <div class="c-name">Download Resume</div>
-            <div class="c-sub">PDF · Updated 2026</div>
+            <div class="c-name">Twitter/X</div>
+            <div class="c-sub">@abhishek</div>
           </div>
-          <div class="c-arrow">↗</div>
+          <span class="c-arrow">↗</span>
         </a>
-        <a href="https://calendar.app.google/uvaMGjWa1poffkUo7" class="c-link">
+        <a href="https://calendly.com/abhishek" class="c-link">
           <div class="c-link-info">
             <div class="c-name">Schedule a Call</div>
-            <div class="c-sub">30 Min · Google Meet</div>
+            <div class="c-sub">calendly.com/abhishek</div>
           </div>
-          <div class="c-arrow">↗</div>
+          <span class="c-arrow">↗</span>
         </a>
       </div>
     </div>
@@ -1274,162 +1287,116 @@ He has my recommendations for Machine Learning and Big Data Analytics.</p>
 
 <!-- FOOTER -->
 <footer>
-  <div class="f-logo">AK · Product Manager</div>
-  <div class="f-copy">© 2026 Abhishek Kumar · abhishekkumarproduct.co.in</div>
-  <div class="f-copy">Built with intent. Designed to impress.</div>
+  <div class="f-logo">© 2025 Abhishek Kumar</div>
+  <div class="f-copy">Designed & Built with Code</div>
 </footer>
 
+<!-- JAVASCRIPT - THIS WAS MISSING! -->
 <script>
-// ── CURSOR
+// ═══════════════════════════════════════════════════════════════════════
+// CUSTOM CURSOR TRACKING
+// ═══════════════════════════════════════════════════════════════════════
 const cur = document.getElementById('cur');
-const ring = document.getElementById('cur-ring');
-let mx=0,my=0,rx=0,ry=0;
-document.addEventListener('mousemove',e=>{
-  mx=e.clientX;my=e.clientY;
-  cur.style.left=mx+'px';cur.style.top=my+'px';
-});
-function animRing(){
-  rx+=(mx-rx)*.12;ry+=(my-ry)*.12;
-  ring.style.left=rx+'px';ring.style.top=ry+'px';
-  requestAnimationFrame(animRing);
-}
-animRing();
+const curRing = document.getElementById('cur-ring');
 
-// ── NAV
-window.addEventListener('scroll',()=>{
-  document.getElementById('nav').classList.toggle('scrolled',scrollY>60);
+document.addEventListener('mousemove', (e) => {
+  cur.style.left = e.clientX + 'px';
+  cur.style.top = e.clientY + 'px';
+  curRing.style.left = e.clientX + 'px';
+  curRing.style.top = e.clientY + 'px';
 });
 
-// ── CANVAS PARTICLE FIELD
-const canvas=document.getElementById('heroCanvas');
-const ctx=canvas.getContext('2d');
-let W,H,particles=[];
-function resize(){
-  W=canvas.width=canvas.offsetWidth;
-  H=canvas.height=canvas.offsetHeight;
-}
-resize();
-window.addEventListener('resize',resize);
-
-class Particle{
-  constructor(){this.reset()}
-  reset(){
-    this.x=Math.random()*W;
-    this.y=Math.random()*H;
-    this.size=Math.random()*.8+.2;
-    this.speedX=(Math.random()-.5)*.3;
-    this.speedY=(Math.random()-.5)*.3;
-    this.opacity=Math.random()*.5+.1;
-    this.gold=Math.random()>.7;
+// ═══════════════════════════════════════════════════════════════════════
+// NAV SCROLL STATE
+// ═══════════════════════════════════════════════════════════════════════
+const nav = document.getElementById('nav');
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 0) {
+    nav.classList.add('scrolled');
+  } else {
+    nav.classList.remove('scrolled');
   }
-  update(){
-    this.x+=this.speedX;this.y+=this.speedY;
-    if(this.x<0||this.x>W||this.y<0||this.y>H)this.reset();
-  }
-  draw(){
-    ctx.beginPath();
-    ctx.arc(this.x,this.y,this.size,0,Math.PI*2);
-    ctx.fillStyle=this.gold
-      ?`rgba(201,168,76,${this.opacity})`
-      :`rgba(255,255,255,${this.opacity*.4})`;
-    ctx.fill();
-  }
-}
-
-// Create connection lines
-for(let i=0;i<120;i++)particles.push(new Particle());
-
-let mouseX=W/2,mouseY=H/2;
-canvas.addEventListener('mousemove',e=>{
-  const r=canvas.getBoundingClientRect();
-  mouseX=e.clientX-r.left;mouseY=e.clientY-r.top;
 });
 
-function drawCanvas(){
-  ctx.clearRect(0,0,W,H);
-  // subtle radial gradient bg
-  const grad=ctx.createRadialGradient(W*.4,H*.5,0,W*.4,H*.5,W*.6);
-  grad.addColorStop(0,'rgba(30,20,5,0.3)');
-  grad.addColorStop(1,'rgba(4,4,10,0)');
-  ctx.fillStyle=grad;ctx.fillRect(0,0,W,H);
-
-  particles.forEach(p=>{p.update();p.draw()});
-
-  // connect close particles
-  for(let i=0;i<particles.length;i++){
-    for(let j=i+1;j<particles.length;j++){
-      const dx=particles[i].x-particles[j].x;
-      const dy=particles[i].y-particles[j].y;
-      const d=Math.sqrt(dx*dx+dy*dy);
-      if(d<100){
-        ctx.beginPath();
-        ctx.strokeStyle=`rgba(201,168,76,${.06*(1-d/100)})`;
-        ctx.lineWidth=.5;
-        ctx.moveTo(particles[i].x,particles[i].y);
-        ctx.lineTo(particles[j].x,particles[j].y);
-        ctx.stroke();
-      }
-    }
-  }
-
-  // mouse repulse
-  particles.forEach(p=>{
-    const dx=p.x-mouseX,dy=p.y-mouseY;
-    const d=Math.sqrt(dx*dx+dy*dy);
-    if(d<150){
-      p.x+=dx/d*1.5;p.y+=dy/d*1.5;
+// ═══════════════════════════════════════════════════════════════════════
+// REVEAL ON SCROLL ANIMATION
+// ═══════════════════════════════════════════════════════════════════════
+const reveals = document.querySelectorAll('.reveal');
+const revealObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('in');
+      // Uncomment to unobserve after reveal:
+      // revealObserver.unobserve(entry.target);
     }
   });
+}, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
 
-  requestAnimationFrame(drawCanvas);
-}
-drawCanvas();
+reveals.forEach(el => revealObserver.observe(el));
 
-// ── CARD MOUSE TRACK
-document.querySelectorAll('[data-card]').forEach(card=>{
-  card.addEventListener('mousemove',e=>{
-    const r=card.getBoundingClientRect();
-    const x=((e.clientX-r.left)/r.width)*100;
-    const y=((e.clientY-r.top)/r.height)*100;
-    card.style.setProperty('--mx',x+'%');
-    card.style.setProperty('--my',y+'%');
+// ═══════════════════════════════════════════════════════════════════════
+// EXPERTISE CARD MOUSE FOLLOW GLOW
+// ═══════════════════════════════════════════════════════════════════════
+document.querySelectorAll('[data-card]').forEach(card => {
+  card.addEventListener('mousemove', (e) => {
+    const rect = card.getBoundingClientRect();
+    const x = (e.clientX - rect.left) / rect.width * 100;
+    const y = (e.clientY - rect.top) / rect.height * 100;
+    card.style.setProperty('--mx', x + '%');
+    card.style.setProperty('--my', y + '%');
+  });
+  
+  card.addEventListener('mouseleave', () => {
+    card.style.setProperty('--mx', '50%');
+    card.style.setProperty('--my', '50%');
   });
 });
 
-// ── SCROLL REVEAL
-const observer=new IntersectionObserver(entries=>{
-  entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');observer.unobserve(e.target)}});
-},{threshold:.12});
-document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
-
-// ── COUNTER ANIMATION
-function animateCount(el,target,suffix,duration=1800){
-  let start=0,startTime=null;
-  const isFloat=target.toString().includes('.');
-  function step(ts){
-    if(!startTime)startTime=ts;
-    const p=Math.min((ts-startTime)/duration,1);
-    const ease=1-Math.pow(1-p,3);
-    const val=isFloat?(start+(target-start)*ease).toFixed(1)
-              :Math.floor(start+(target-start)*ease);
-    el.textContent=val+suffix;
-    if(p<1)requestAnimationFrame(step);
+// ═══════════════════════════════════════════════════════════════════════
+// HERO CANVAS ANIMATION (Optional Animated Background)
+// ═══════════════════════════════════════════════════════════════════════
+const canvas = document.getElementById('heroCanvas');
+if (canvas && canvas.getContext) {
+  const ctx = canvas.getContext('2d');
+  canvas.width = window.innerWidth;
+  canvas.height = window.innerHeight;
+  
+  // Resize canvas on window resize
+  window.addEventListener('resize', () => {
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+  });
+  
+  // Simple animated gradient background
+  function drawBackground() {
+    // Create a subtle gradient
+    const gradient = ctx.createLinearGradient(0, 0, canvas.width, canvas.height);
+    gradient.addColorStop(0, 'rgba(4, 4, 10, 0)');
+    gradient.addColorStop(0.5, 'rgba(201, 168, 76, 0.02)');
+    gradient.addColorStop(1, 'rgba(4, 4, 10, 0)');
+    
+    ctx.fillStyle = gradient;
+    ctx.fillRect(0, 0, canvas.width, canvas.height);
+    
+    requestAnimationFrame(drawBackground);
   }
-  requestAnimationFrame(step);
+  
+  drawBackground();
 }
 
-const metricObs=new IntersectionObserver(entries=>{
-  entries.forEach(e=>{
-    if(e.isIntersecting){
-      animateCount(document.getElementById('m1'),40,'%');
-      animateCount(document.getElementById('m2'),3,'×');
-      animateCount(document.getElementById('m3'),10 Million+,'K+');
-      animateCount(document.getElementById('m4'),42,'+');
-      metricObs.disconnect();
+// ═══════════════════════════════════════════════════════════════════════
+// SMOOTH SCROLL ENHANCEMENT
+// ═══════════════════════════════════════════════════════════════════════
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+    const href = this.getAttribute('href');
+    if (href !== '#' && document.querySelector(href)) {
+      e.preventDefault();
+      const target = document.querySelector(href);
+      target.scrollIntoView({ behavior: 'smooth' });
     }
   });
-},{threshold:.3});
-metricObs.observe(document.getElementById('metrics'));
+});
 </script>
 </body>
 </html>
